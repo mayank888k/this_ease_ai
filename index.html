@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>This-Ease.ai</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
+  <link href="img/favicon.png" rel="shortcut icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate-css/animate.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="preloader"></div>
+
+  <!--==========================
+  Hero Section
+  ============================-->
+  <section id="hero">
+    <div class="hero-container">
+      <div class="wow fadeIn">
+        <div class="hero-logo">
+          <!-- img class="" src="img/logo.png" alt="Health-AI" -->
+        </div>
+
+        <h1>Welcome to This-Ease.ai</h1>
+        <h3>An Artificial Intelligence powered healthcare initiative</h3>
+        <h2>Our AI techniques cover <span class="rotating">Corona Virus, Kidney Disease, Liver Disease, Diabetes, Heart
+            Disease, Breast Cancer</span></h2>
+        <div class="actions">
+
+          <a href="https://this-ease-liver-mk.herokuapp.com/" class="btn-services">Liver Disease</a> &emsp; &emsp;
+
+
+          <a href="https://this-ease-heart-mk.herokuapp.com/" class="btn-services">Heart Disease</a> &emsp;
+          <a href="https://this-ease-diabetes-mk.herokuapp.com/" class="btn-services">Diabetes</a> &emsp;
+          <br>
+          <a href="https://this-ease-covid-mk.herokuapp.com/" class="btn-get-started">Corona Virus</a> &emsp;
+
+          <a href="https://this-ease-parkinsons-mk.herokuapp.com/" class="btn-services">Parkinsons Disease</a>
+          <br>
+          <a href="https://this-ease-kidney-mk.herokuapp.com/" class="btn-services">Kidney Disease</a> &emsp;
+          <a href="https://this-ease-breast-cancer-mk.herokuapp.com/" class="btn-services">Breast Cancer</a>
+          <br>
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!--==========================
+  Header Section
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="#hero"><img src="img/logo.png" alt="" title="" /></img></a>
+        <!-- Uncomment below if you prefer to use a text image -->
+        <!-- <h1><a href="#hero">Header 1</a></h1> -->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+
+
+
+
+          <li class="menu-has-children"><a href="javascript:void(0);">Diseases Info</a>
+            <ul>
+              <li><a href="#d1">Corona Virus</a></li>
+              <li><a href="#d2">Diabetes</a></li>
+              <li><a href="#d3">Liver Disease</a></li>
+              <li><a href="#d4">Chronic Kidney Disease</a></li>
+              <li><a href="#d7">Heart Disease</a></li>
+              <li><a href="#d8">Breast Cancer</a></li>
+              <li><a href="#d9">Parkinsons Disease</a></li>
+            </ul>
+          </li>
+          <li><input type="text" id="myInput" onkeyup="myFunction()" placeholder="    Search for diseases...">
+
+            <ul id="myUL">
+              <li><a href="https://this-ease-covid-mk.herokuapp.com/">Corona Virus</a></li>
+              <li><a href="https://this-ease-diabetes-mk.herokuapp.com/">Diabetes</a></li>
+              <li><a href="https://this-ease-liver-mk.herokuapp.com/">Liver Disease</a></li>
+              <li><a href="https://this-ease-kidney-mk.herokuapp.com/">Chronic Kidney Disease</a></li>
+              <li><a href="https://this-ease-heart-mk.herokuapp.com/">Heart Disease</a></li>
+              <li><a href="https://this-ease-breast-cancer-mk.herokuapp.com/">Breast Cancer</a></li>
+              <li><a href="https://this-ease-parkinsons-mk.herokuapp.com/">Parkinsons Disease</a></li>
+            </ul>
+
+
+
+
+
+
+            <script>
+              function myFunction() {
+                // Declare variables
+                var input, filter, ul, li, a, i, txtValue;
+                input = document.getElementById('myInput');
+                filter = input.value.toUpperCase();
+                ul = document.getElementById("myUL");
+                li = ul.getElementsByTagName('li');
+
+                // Loop through all list items, and hide those who don't match the search query
+                for (i = 0; i < li.length; i++) {
+                  a = li[i].getElementsByTagName("a")[0];
+                  txtValue = a.textContent || a.innerText;
+                  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                  } else {
+                    li[i].style.display = "none";
+                  }
+                }
+              }
+            </script>
+
+
+
+
+
+
+
+          </li>
+
+        </ul>
+      </nav>
+      <!-- #nav-menu-container -->
+    </div>
+  </header>
+  <!-- #header -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--==========================
+  About Section
+  ============================-->
+  <section id="about">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">About</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">Health-AI is a project which uses advanced techniques like AI to detect sudden
+            health issues</p>
+        </div>
+      </div>
+    </div>
+    <div class="container about-container wow fadeInUp">
+      <div class="row">
+
+        <div class="col-lg-6 about-img">
+          <img src="img/about.jpg" alt="">
+        </div>
+
+        <div class="col-md-6 about-content">
+          <h2 class="about-title">A HEALTHY TOMORROW IS A BETTER TOMORROW</h2>
+          <p class="about-text">
+            We are a group of people with an aim to integrate industrial scale healthcare sector with state of the art
+            technology.
+
+
+
+          </p>
+
+          <p class="about-text">
+            This-Ease.ai is a project which uses advanced artificial intelligence techniques and machine learning
+            algorithms to detect and predict deadly and life threatening diseases.
+          </p>
+
+          <p class="about-text">
+            Detecting and predicting a disease in terms of healthcare is something extraordinary and remarkable the
+            implications of which can save millions of lives, our project This-Ease.ai has achieved this.
+          </p>
+
+
+          <p class="about-text">
+            Currently, we can detect and predict upto 11 different diseases and medical conditions.
+          </p>
+
+
+          <p class="about-text">
+            Beyond this, the services that we offer include but are not limited to Pharmacy information, drugs
+            information, latest news health and healthcare topics and blogs of expert physicians of various topics and
+            trends.
+          </p>
+
+
+
+          <p class="about-text">
+            At the end of the day, we are a project aimed to integrate high end technology with the field of healthcare
+            while protecting privacy hence, saving lives and making the world a better place.
+          </p>
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!--==========================
+  Diseases - image vs numeric
+  ============================-->
+  <section id="services">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">We Cover the following Diseases</h3>
+          <div class="section-title-divider"></div>
+          <h1 class="section-description">Click the disease's link you want to test for</h1>
+          <p class="section-description">The following diseases require you to enter <b>NUMERIC</b> details</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-bar-chart"></i></div>
+          <h4 class="service-title"><a href="https://this-ease-liver-mk.herokuapp.com/">Liver Disease</a></h4>
+          <p class="service-description">Numeric Data Required<br> Enter the details in the form that appears</p>
+        </div>
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-bar-chart"></i></div>
+          <h4 class="service-title"><a href="https://this-ease-heart-mk.herokuapp.com/">Heart Disease</a></h4>
+          <p class="service-description">Numeric Data Required<br> Enter the details in the form that appears</p>
+        </div>
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-bar-chart"></i></div>
+          <h4 class="service-title"><a href="https://this-ease-diabetes-mk.herokuapp.com/">Diabetes</a></h4>
+          <p class="service-description">Numeric Data Required<br> Enter the details in the form that appears</p>
+        </div>
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-bar-chart"></i></div>
+          <h4 class="service-title"><a href="https://this-ease-covid-mk.herokuapp.com/">Corona Virus</a></h4>
+          <p class="service-description">Numeric Data Required<br> Enter the details in the form that appears</p>
+        </div>
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-bar-chart"></i></div>
+          <h4 class="service-title"><a href="https://this-ease-kidney-mk.herokuapp.com/">Kidney Disease</a></h4>
+          <p class="service-description">Numeric Data Required<br> Enter the details in the form that appears</p>
+        </div>
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-bar-chart"></i></div>
+          <h4 class="service-title"><a href="https://this-ease-parkinsons-mk.herokuapp.com/">Parkinsons Disease</a></h4>
+          <p class="service-description">Numeric Data Required<br> Enter the details in the form that appears</p>
+        </div>
+        <div class="col-md-4 service-item"></div>
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-bar-chart"></i></div>
+          <h4 class="service-title"><a href="https://this-ease-breast-cancer-mk.herokuapp.com/">Breast Cancer</a></h4>
+          <p class="service-description">Numeric Data Required<br> Enter the details in the form that appears</p>
+        </div>
+        <div class="col-md-4 service-item"></div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+  <!--==========================
+  Underestimating disease section
+  ============================-->
+  <section id="subscribe">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-8">
+          <h3 class="subscribe-title">Underestimating A Disease?<br>Maybe You Want To Reconsider</h3>
+          <p class="subscribe-text">The following section gives details about the Diseases</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--==========================
+   Description of disease
+  ============================-->
+
+  <section id="testimonials">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="section-title-divider"></div>
+
+        </div>
+      </div>
+
+      <p id="d1">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="profile">
+              <div class="pic"><img src="img/corona.jpg" alt=""></div>
+              <h4>Corona Virus</h4>
+              <span>Most Recent</span>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="quote">
+              <b>CORONA VIRUS</b><br>
+              The novel coronavirus outbreak that began in December in Wuhan, China, has now spread to more than 25
+              countries and regions.<br><br>
+              Cases rise: There are a total of 28,273 confirmed cases and 565 deaths globally, the vast majority of
+              which are in mainland China. Some countries have seen a surge in cases; Japan now has 45 cases, the
+              highest number for a country outside China.<br><br>
+              Youngest patient: Two newborn infants are infected in Wuhan, according to China's state broadcaster. The
+              youngest baby was diagnosed just 30 hours after being born to a mother who had also been infected. Experts
+              warn it's unclear how the baby got infected, as there could be various ways it became exposed to the
+              virus.<br><br>
+              Recoveries: There are reports of patients recovering; the first patient in the US was discharged from
+              hospital earlier this week, in Washington state, and the first patient in Taiwan will also be discharged
+              soon.<br><br>
+              Quarantined cruises: More than 7,300 people are quarantined on two cruise ships docked in Hong Kong and
+              Japan, after former passengers were confirmed to have the virus. A total of 20 people were found to be
+              infected on the ship in Japan, tests showed today.
+
+            </div>
+          </div>
+        </div>
+      </p>
+
+      <br>
+
+
+
+      <p id="d2">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="quote">
+              <b>DIABETES</b><br>
+              Diabetes is a chronic disease that occurs either when the pancreas does not produce enough insulin or when
+              the body cannot effectively use the insulin it produces.
+              Insulin is a hormone that regulates blood sugar.<br><br>
+              Hyperglycaemia, or raised blood sugar, is a common effect of uncontrolled diabetes and over time leads to
+              serious damage to many of the body's systems, especially the nerves and blood vessels.
+              According to the World Health Organization (WHO), India had 69.2 million people living with diabetes in
+              2015.<br><br>
+              India actually has the highest number of diabetics of any one country in the entire world.
+              In 2016, diabetes was the direct cause of 1.6 million deaths and in 2012 high blood glucose was the cause
+              of another 2.2 million deaths worldwide.
+
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="profile">
+              <div class="pic"><img src="img/diabetes.jpg" alt=""></div>
+              <h4>Diabetes</h4>
+              <span>Most Common</span>
+            </div>
+          </div>
+        </div>
+      </p>
+
+      <br>
+
+
+      <p id="d3">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="profile">
+              <div class="pic"><img src="img/liver.jpg" alt=""></div>
+              <h4>Liver Disease</h4>
+              <span>Very Common</span>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="quote">
+              <b>LIVER DISEASE</b><br>
+              Liver disease can be inherited (genetic) or caused by a variety of factors that damage the liver, such as
+              viruses and alcohol use. Obesity is also associated with liver damage.
+              Over time, damage to the liver results in scarring (cirrhosis), which can lead to liver failure, a
+              life-threatening condition.<br><br>
+              According to the latest WHO data published in 2017 Liver Disease Deaths in India reached 259,749 or 2.95%
+              of total deaths.
+              The age adjusted Death Rate is 22.93 per 100,000 of population ranks India #63 in the world.
+
+            </div>
+          </div>
+        </div>
+        <br>
+      </p>
+
+
+      <p id="d4">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="quote">
+              <b>CHRONIC KIDNEY DISEASE</b><br>
+              Chronic kidney disease, also called chronic kidney failure, describes the gradual loss of kidney function.
+              Your kidneys filter wastes and excess fluids from your blood, which are then excreted in your urine.
+              <br><br>
+              When chronic kidney disease reaches an advanced stage, dangerous levels of fluid, electrolytes and wastes
+              can build up in your body.
+              Studies estimate that the number of new patients diagnosed with End Stage Kidney Disease (ESKD) who are
+              started on dialysis or transplantation is over 100,000 per year in India
+
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="profile">
+              <div class="pic"><img src="img/kidney.jpg" alt=""></div>
+              <h4>Kidney Disease</h4>
+              <span>Pernicious</span>
+            </div>
+          </div>
+        </div>
+      </p>
+
+      <br>
+
+
+
+
+
+
+
+
+      <p id="d7">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="profile">
+              <div class="pic"><img src="img/heart1.jpg" alt=""></div>
+              <h4>Heart Disease</h4>
+              <span>Most Pernicious</span>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="quote">
+              <b>HEART DISEASE</b><br>
+              Heart disease describes a range of conditions that affect your heart.
+              Diseases under the heart disease umbrella include blood vessel diseases, such as coronary artery disease;
+              heart rhythm problems (arrhythmias); and heart defects you're born with (congenital heart defects), among
+              others.<br><br>
+              Heart diseases are the number 1 cause of death globally, taking an estimated 17.9 million lives each year.
+              One third of these deaths occur prematurely in people under 70 years of age.
+
+            </div>
+          </div>
+        </div>
+
+        <br>
+      </p>
+
+
+
+      <p id="d8">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="quote">
+              <b>BREAST CANCER</b><br>
+              Breast cancer is cancer that develops from breast tissue. Signs of breast cancer may include a lump in the
+              breast, a change in breast shape,
+              dimpling of the skin, or a red or scaly patch of skin.
+              Breast cancer is the most frequent cancer among women, impacting 2.1 million women each year, and also
+              causes the greatest number of cancer-related deaths among women.<br><br>
+              In 2018, it is estimated that 627,000 women died from breast cancer – that is approximately 15% of all
+              cancer deaths among women.
+              While breast cancer rates are higher among women in more developed regions, rates are increasing in nearly
+              every region globally.
+
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="profile">
+              <div class="pic"><img src="img/breastcancer.jpg" alt=""></div>
+              <h4>Breast Cancer</h4>
+              <span>Very Common</span>
+            </div>
+          </div>
+        </div>
+
+        <br>
+      </p>
+
+
+
+
+
+
+
+      <p id="d10">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="quote">
+              <b>Parkinsons Disease</b><br>
+              Parkinson’s disease is a neurological movement disorder. Common symptoms include tremor, slowness of
+              movement, stiff muscles, unsteady walk and balance and coordination problems. There is no cure for the
+              disease. Most patients can maintain a good quality of life with medications. In some patients, surgery can
+              help improve symptoms.<br><br>
+              About 50% more men than women get Parkinson’s disease. It is most commonly seen in persons 60 years of age
+              and older. However, up to 10% of patients are diagnosed before age 50.
+
+              About 60,000 new cases of Parkinson’s disease are diagnosed in the United States each year.
+
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="profile">
+              <div class="pic"><img src="img/sepsis1.jpg" alt=""></div>
+              <h4>Parkinsons Disease</h4>
+              <span>Pernicious</span>
+            </div>
+          </div>
+        </div>
+        <br>
+      </p>
+
+
+
+
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+  <!--==========================
+  Footer
+============================-->
+  <div id="intro" class="container-fluid view" style="padding: 0 !important;">
+    <footer class="mainfooter" role="contentinfo">
+      <div class="footer-middle">
+        <div class="container">
+          <div class="row">
+            <div class="d-flex justify-content-center abc col-md-12">
+              <ul class="social-network social-circle">
+                <li><a href="https://github.com/mayank888k" title="GitHub"><i class="abc"><img
+                        src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"
+                        alt="" srcset=""></i></a></li>
+                <li><a href="https://linkedin.com/in/mayank888k" class="icoLinkedin" title="Linkedin"><i
+                      class="abc"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV6Shh96sl0uLNx3o23aiboKxQganhHjuMrQ&usqp=CAU"
+                        alt="" srcset=""></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 copy">
+              <p class="text-center">&copy; Made By Mayank &copy;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- #footer -->
+
+
+
+
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Required JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/morphext/morphext.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/stickyjs/sticky.js"></script>
+  <script src="lib/easing/easing.js"></script>
+
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="js/custom.js"></script>
+
+  <script src="contactform/contactform.js"></script>
+
+
+</body>
+
+</html>
